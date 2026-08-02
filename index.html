@@ -4,24 +4,39 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pujitha Jujjarapu · ML Engineer & Researcher</title>
+<!-- SOCIAL PREVIEW: replace the two URLs below with your real live address.
+     If your repo is named  PujithaJ-02.github.io   ->  https://PujithaJ-02.github.io
+     If it has another name (e.g. portfolio)        ->  https://PujithaJ-02.github.io/portfolio -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pujitha Jujjarapu · ML Engineer & Researcher">
+<meta property="og:description" content="M.S. Computer Science, 2026. I turn raw data into decisions across machine learning, data science, and research. Projects, papers, and an AI assistant that answers questions about my work.">
+<meta property="og:image" content="https://pujithaj-02.github.io/Pujitha-Portfolio/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://PujithaJ-02.github.io/">
+
+<meta property="og:url" content="https://pujithaj-02.github.io/Pujitha-Portfolio/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="ML engineer and first-author researcher. Production ML, GenAI (RAG, RLHF), and IEEE-accepted research.">
+<meta name="author" content="Pujitha Jujjarapu">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Schibsted+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#F5F7FB;
-    --bg-2:#FFFFFF;
-    --bg-3:#E9EEF6;
-    --panel:#FFFFFF;
-    --text:#1E2A3A;
-    --muted:#5B6675;
-    --muted-2:#939CAB;
-    --teal:#3E6DB3;      /* primary accent */
-    --teal-deep:#2B4E85;
-    --gold:#E58A6A;      /* warm secondary */
-    --slate:#6B7B90;     /* calm tertiary */
-    --line:rgba(30,42,58,.13);
-    --line-2:rgba(30,42,58,.07);
+    --bg:#F4F1E9;
+    --bg-2:#FBF9F3;
+    --bg-3:#EDE8DD;
+    --panel:#FBF9F3;
+    --text:#25302E;
+    --muted:#5C635F;
+    --muted-2:#8C8B81;
+    --teal:#2C6A63;      /* primary accent */
+    --teal-deep:#1E4A45;
+    --gold:#B08C56;      /* warm secondary */
+    --slate:#556E88;     /* calm tertiary */
+    --line:rgba(37,48,46,.13);
+    --line-2:rgba(37,48,46,.07);
     --display:"Bricolage Grotesque",system-ui,sans-serif;
     --body:"Schibsted Grotesk",system-ui,sans-serif;
     --mono:"JetBrains Mono",ui-monospace,monospace;
@@ -37,12 +52,12 @@
   body::before{
     content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
     background:
-      radial-gradient(720px 520px at 82% -8%, rgba(62,109,179,.07), transparent 60%),
-      radial-gradient(680px 520px at 4% 6%, rgba(229,138,106,.06), transparent 62%);
+      radial-gradient(720px 520px at 82% -8%, rgba(44,106,99,.07), transparent 60%),
+      radial-gradient(680px 520px at 4% 6%, rgba(176,140,86,.06), transparent 62%);
   }
   body::after{
     content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
-    background-image:radial-gradient(rgba(30,42,58,.05) 1px, transparent 1px);
+    background-image:radial-gradient(rgba(37,48,46,.05) 1px, transparent 1px);
     background-size:30px 30px;
     mask-image:linear-gradient(to bottom, transparent, #000 10%, #000 90%, transparent);
   }
@@ -71,21 +86,21 @@
   @media(max-width:900px){.hero .wrap{grid-template-columns:1fr;gap:40px}}
   .status{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);
     border:1px solid color-mix(in srgb,var(--teal) 30%,transparent);padding:7px 13px;border-radius:30px;background:color-mix(in srgb,var(--teal) 6%,transparent)}
-  .status .pulse{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 0 rgba(62,109,179,.5);animation:pulse 2.6s infinite}
-  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(62,109,179,.45)}70%{box-shadow:0 0 0 9px rgba(62,109,179,0)}100%{box-shadow:0 0 0 0 rgba(62,109,179,0)}}
+  .status .pulse{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 0 rgba(44,106,99,.5);animation:pulse 2.6s infinite}
+  @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(44,106,99,.45)}70%{box-shadow:0 0 0 9px rgba(44,106,99,0)}100%{box-shadow:0 0 0 0 rgba(44,106,99,0)}}
   .hero h1{font-family:var(--display);font-weight:700;font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.02;letter-spacing:-.025em;margin:20px 0 22px;color:var(--text)}
   .hero h1 .grad{font-style:normal}
   .hero .lede{font-size:1.14rem;color:var(--muted);max-width:47ch}
   .hero .lede b{color:var(--text);font-weight:600}
   .metrics{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
   .metric{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:11px 15px;display:flex;flex-direction:column;gap:2px;transition:transform .18s,border-color .18s,box-shadow .18s}
-  .metric:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--teal) 40%,transparent);box-shadow:0 12px 26px -18px rgba(30,42,58,.4)}
+  .metric:hover{transform:translateY(-3px);border-color:color-mix(in srgb,var(--teal) 40%,transparent);box-shadow:0 12px 26px -18px rgba(37,48,46,.4)}
   .metric .n{font-family:var(--display);font-weight:700;font-size:1.35rem;line-height:1}
   .metric .l{font-family:var(--mono);font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted-2)}
   .cta-row{display:flex;gap:13px;margin-top:32px;flex-wrap:wrap}
   .btn{font-family:var(--mono);font-size:.73rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;padding:13px 22px;border-radius:11px;transition:transform .18s,box-shadow .2s,background .2s,border-color .2s,color .2s;display:inline-flex;align-items:center;gap:9px}
   .btn.primary{background:var(--teal);color:#fbf9f3;font-weight:600}
-  .btn.primary:hover{transform:translateY(-2px);background:var(--teal-deep);box-shadow:0 14px 28px -14px rgba(62,109,179,.6)}
+  .btn.primary:hover{transform:translateY(-2px);background:var(--teal-deep);box-shadow:0 14px 28px -14px rgba(44,106,99,.6)}
   .btn.ghost{border:1px solid var(--line);color:var(--muted)}
   .btn.ghost:hover{border-color:var(--teal);color:var(--teal);transform:translateY(-2px)}
   .btn .dot{width:7px;height:7px;border-radius:50%;background:var(--gold)}
@@ -94,9 +109,9 @@
   .portrait-shell{display:flex;justify-content:center}
   .portrait{position:relative;width:min(400px,80vw);aspect-ratio:4/5;cursor:crosshair}
   .portrait .halo{position:absolute;inset:-12%;border-radius:26px;
-    background:radial-gradient(circle at 50% 42%, rgba(229,138,106,.20), transparent 60%);filter:blur(26px);z-index:0}
+    background:radial-gradient(circle at 50% 42%, rgba(176,140,86,.20), transparent 60%);filter:blur(26px);z-index:0}
   .portrait .frame{position:absolute;inset:0;border-radius:22px;overflow:hidden;border:1px solid var(--line);
-    box-shadow:0 34px 70px -38px rgba(30,42,58,.45), inset 0 1px 0 rgba(255,255,255,.5);background:var(--bg-2);z-index:1}
+    box-shadow:0 34px 70px -38px rgba(37,48,46,.45), inset 0 1px 0 rgba(255,255,255,.5);background:var(--bg-2);z-index:1}
   .portrait .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .45s ease;z-index:1}
   .portrait canvas{position:absolute;inset:0;width:100%;height:100%;z-index:2}
   .portrait .hint{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);z-index:3;
@@ -114,15 +129,15 @@
   /* CHAT WIDGET */
   .cw-launch{position:fixed;right:22px;bottom:22px;z-index:80;display:flex;align-items:center;gap:11px}
   .cw-bubble{font-family:var(--body);font-size:.8rem;line-height:1.35;color:var(--text);background:var(--bg-2);border:1px solid var(--line);
-    padding:9px 13px;border-radius:14px 14px 4px 14px;box-shadow:0 14px 32px -18px rgba(30,42,58,.55);max-width:186px;cursor:pointer;transition:opacity .3s}
+    padding:9px 13px;border-radius:14px 14px 4px 14px;box-shadow:0 14px 32px -18px rgba(37,48,46,.55);max-width:186px;cursor:pointer;transition:opacity .3s}
   .cw-bubble b{color:var(--teal)}
   .cw-btn{width:58px;height:58px;border-radius:50%;border:none;cursor:pointer;flex:none;background:var(--teal);color:#fbf9f3;display:grid;place-items:center;
-    box-shadow:0 16px 32px -12px rgba(62,109,179,.6);transition:transform .2s,background .2s}
+    box-shadow:0 16px 32px -12px rgba(44,106,99,.6);transition:transform .2s,background .2s}
   .cw-btn:hover{transform:translateY(-2px) scale(1.03);background:var(--teal-deep)}
   .cw-btn svg{width:26px;height:26px}
   .cw-panel{position:fixed;right:22px;bottom:92px;z-index:81;width:min(384px,calc(100vw - 44px));height:min(560px,calc(100vh - 128px));
     background:var(--bg-2);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;
-    box-shadow:0 34px 74px -26px rgba(30,42,58,.6);opacity:0;transform:translateY(14px) scale(.985);pointer-events:none;transition:opacity .25s,transform .25s}
+    box-shadow:0 34px 74px -26px rgba(37,48,46,.6);opacity:0;transform:translateY(14px) scale(.985);pointer-events:none;transition:opacity .25s,transform .25s}
   .cw-panel.open{opacity:1;transform:none;pointer-events:auto}
   .cw-head{display:flex;align-items:center;gap:11px;padding:12px 14px;border-bottom:1px solid var(--line)}
   .cw-head .av{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--teal),var(--gold));flex:none}
@@ -185,7 +200,7 @@
   @media(max-width:620px){.loves{grid-template-columns:1fr}}
   .love{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:24px;position:relative;overflow:hidden;transition:transform .2s,border-color .2s,box-shadow .2s}
   .love::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(var(--teal),var(--gold));opacity:0;transition:opacity .25s}
-  .love:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--teal) 40%,transparent);box-shadow:0 24px 44px -32px rgba(30,42,58,.45)}
+  .love:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--teal) 40%,transparent);box-shadow:0 24px 44px -32px rgba(37,48,46,.45)}
   .love:hover::before{opacity:1}
   .love .tag{font-family:var(--mono);font-size:.6rem;letter-spacing:.08em;text-transform:uppercase;color:var(--teal)}
   .love h3{font-family:var(--display);font-weight:700;font-size:1.28rem;margin:9px 0 8px;letter-spacing:-.01em}
@@ -208,7 +223,7 @@
   .tl-when .badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
   .badge{font-size:.6rem;letter-spacing:.05em;text-transform:uppercase;padding:4px 9px;border-radius:20px;font-family:var(--mono)}
   .badge.v{background:color-mix(in srgb,var(--slate) 14%,transparent);color:var(--slate);border:1px solid color-mix(in srgb,var(--slate) 34%,transparent)}
-  .badge.a{background:color-mix(in srgb,var(--gold) 16%,transparent);color:#b5623f;border:1px solid color-mix(in srgb,var(--gold) 40%,transparent)}
+  .badge.a{background:color-mix(in srgb,var(--gold) 16%,transparent);color:#8a6c37;border:1px solid color-mix(in srgb,var(--gold) 40%,transparent)}
   .badge.t{background:color-mix(in srgb,var(--teal) 12%,transparent);color:var(--teal);border:1px solid color-mix(in srgb,var(--teal) 32%,transparent)}
   .tl-body h3{font-family:var(--display);font-weight:700;font-size:1.34rem;line-height:1.18;letter-spacing:-.01em}
   .tl-body .role{color:var(--teal);font-weight:600;font-size:.94rem;margin:3px 0 13px}
@@ -220,7 +235,7 @@
   .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
   @media(max-width:760px){.proj-grid{grid-template-columns:1fr}}
   .proj{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:15px;transition:transform .2s,box-shadow .2s,border-color .2s}
-  .proj:hover{transform:translateY(-5px);box-shadow:0 30px 54px -38px rgba(30,42,58,.5);border-color:color-mix(in srgb,var(--teal) 32%,transparent)}
+  .proj:hover{transform:translateY(-5px);box-shadow:0 30px 54px -38px rgba(37,48,46,.5);border-color:color-mix(in srgb,var(--teal) 32%,transparent)}
   .proj-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
   .proj h3{font-family:var(--display);font-weight:700;font-size:1.3rem;line-height:1.14;letter-spacing:-.01em}
   .proj .kind{font-family:var(--mono);font-size:.58rem;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);white-space:nowrap;padding-top:5px}
@@ -240,7 +255,7 @@
   .colhead{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted-2);margin-bottom:16px}
   .stack-list{display:flex;flex-direction:column;gap:16px}
   .entry{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;transition:border-color .2s,transform .2s,box-shadow .2s}
-  .entry:hover{border-color:color-mix(in srgb,var(--teal) 34%,transparent);transform:translateY(-2px);box-shadow:0 18px 34px -28px rgba(30,42,58,.4)}
+  .entry:hover{border-color:color-mix(in srgb,var(--teal) 34%,transparent);transform:translateY(-2px);box-shadow:0 18px 34px -28px rgba(37,48,46,.4)}
   .entry .top{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
   .entry h3{font-family:var(--display);font-weight:700;font-size:1.12rem;line-height:1.24;letter-spacing:-.01em}
   .entry .when{font-family:var(--mono);font-size:.63rem;color:var(--muted-2);white-space:nowrap}
@@ -254,13 +269,13 @@
   .contact{position:relative;border-radius:28px;padding:60px 46px;text-align:center;overflow:hidden;margin-top:20px;
     background:linear-gradient(140deg,var(--bg-2),var(--bg-3));border:1px solid var(--line)}
   .contact::before{content:"";position:absolute;inset:0;background:
-    radial-gradient(420px 320px at 18% 0%,rgba(62,109,179,.12),transparent 60%),
-    radial-gradient(460px 360px at 92% 112%,rgba(229,138,106,.14),transparent 60%);pointer-events:none}
+    radial-gradient(420px 320px at 18% 0%,rgba(44,106,99,.12),transparent 60%),
+    radial-gradient(460px 360px at 92% 112%,rgba(176,140,86,.14),transparent 60%);pointer-events:none}
   .contact h2{font-family:var(--display);font-weight:700;font-size:clamp(1.9rem,4.2vw,2.9rem);letter-spacing:-.02em;position:relative}
   .contact p{color:var(--muted);max-width:48ch;margin:14px auto 28px;position:relative}
   .contact .links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative}
   .contact .links a{font-family:var(--mono);font-size:.73rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:13px 22px;border-radius:11px;border:1px solid var(--line);color:var(--text);transition:all .2s;background:var(--bg-2)}
-  .contact .links a:hover{border-color:var(--teal);color:var(--teal);transform:translateY(-2px);box-shadow:0 14px 26px -16px rgba(62,109,179,.4)}
+  .contact .links a:hover{border-color:var(--teal);color:var(--teal);transform:translateY(-2px);box-shadow:0 14px 26px -16px rgba(44,106,99,.4)}
   .contact .links a.solid{background:var(--teal);border-color:var(--teal);color:#fbf9f3;font-weight:600}
   .contact .links a.solid:hover{background:var(--teal-deep);color:#fbf9f3}
 
@@ -636,7 +651,7 @@
 </section>
 
 <footer>
-  <div class="wrap"><span class="mono">Rendered in data points · Pujitha Jujjarapu · 2026 · build 5</span></div>
+  <div class="wrap"><span class="mono">Rendered in data points · Pujitha Jujjarapu · 2026 · build 6</span></div>
 </footer>
 
 <!-- Floating chat assistant (custom UI, talks to the live Vercel /api/chat) -->
@@ -773,7 +788,7 @@
 
   function easeOut(t){return 1-Math.pow(1-t,3);}
 
-  var TEAL='#3E6DB3';
+  var TEAL='#2C6A63';
   function roundRectPath(c,x,y,w,h,r){
     c.beginPath();
     c.moveTo(x+r,y); c.arcTo(x+w,y,x+w,y+h,r); c.arcTo(x+w,y+h,x,y+h,r);
@@ -838,9 +853,9 @@
       var t=(now%1600)/1600;
       var ly=ry + 6 + t*(winH-12);
       var grad=ctx.createLinearGradient(rx,ly,rx+winW,ly);
-      grad.addColorStop(0,'rgba(62,109,179,0)');
-      grad.addColorStop(0.5,'rgba(62,109,179,0.9)');
-      grad.addColorStop(1,'rgba(62,109,179,0)');
+      grad.addColorStop(0,'rgba(44,106,99,0)');
+      grad.addColorStop(0.5,'rgba(44,106,99,0.9)');
+      grad.addColorStop(1,'rgba(44,106,99,0)');
       ctx.strokeStyle=grad; ctx.lineWidth=1.6;
       ctx.beginPath(); ctx.moveTo(rx+4,ly); ctx.lineTo(rx+winW-4,ly); ctx.stroke();
       // face-detection tag: shows ONLY when the scan window is over the face,
